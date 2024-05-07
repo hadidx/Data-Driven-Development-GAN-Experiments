@@ -6,6 +6,10 @@ The notebooks require around 25GB of VRAM to run properly. Furthermore, the note
 
 The "CTSpine1K Segmentation Maps Processing" notebook shows how we generated synthetic CT scans from the CTSpine1K dataset segmentation maps. The synthetic data that results from this notebook is stored in the padded_seg2cts3.zip file.
 
+"cropped_fractured_vertebra.zip" and "cropped_healthy_vertebra.zip" contain the AUBMC healthy and fractured vertebra after processing. Porcessing scripts cannot be shared publicaly since they are part of an ongoing thesis.
+
+The "use_vae_gans" is an example that demonstrates how to load and use the VAE-GANs found in the models folder.
+
 The "dcgan_on_synthetic_spine_cts" shows how to load the data, define a DCGAN, its losses, training step, how to calculate the FID score, and save the results for the synthetic vertebra dataset.
 
 "Variational Autoencoder Synthetic CTs" and "Variational Autoencoder Real CTs" notebooks show how to define convolutional VAEs, their losses, their training step, and how to train them for the synthetic and AUBMC datasets respectivly. Both notebooks are similar with differences being limited to the names of the folders being loaded and files being saved.
