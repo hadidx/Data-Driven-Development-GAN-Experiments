@@ -6,16 +6,16 @@ The notebooks require around 25GB of VRAM to run properly. Furthermore, the note
 
 The "CTSpine1K Segmentation Maps Processing" notebook shows how we generated synthetic CT scans from the CTSpine1K dataset segmentation maps. The synthetic data that results from this notebook is stored in the padded_seg2cts3.zip file.
 
-"cropped_fractured_vertebra.zip" and "cropped_healthy_vertebra.zip" contain the AUBMC healthy and fractured vertebra after processing. Porcessing scripts cannot be shared publicaly since they are part of an ongoing thesis.
+"cropped_fractured_vertebra.zip" and "cropped_healthy_vertebra.zip" contain the healthy and fractured vertebra of our original small dataset after processing. Porcessing scripts cannot be shared publicaly since they are part of an ongoing thesis.
 
 The "use_vae_gans" is an example that demonstrates how to load and use the VAE-GANs found in the models folder.
 
 The "dcgan_on_synthetic_spine_cts" shows how to load the data, define a DCGAN, its losses, training step, how to calculate the FID score, and save the results for the synthetic vertebra dataset.
 
-"Variational Autoencoder Synthetic CTs" and "Variational Autoencoder Real CTs" notebooks show how to define convolutional VAEs, their losses, their training step, and how to train them for the synthetic and AUBMC datasets respectivly. Both notebooks are similar with differences being limited to the names of the folders being loaded and files being saved.
+"Variational Autoencoder Synthetic CTs" and "Variational Autoencoder Real CTs" notebooks show how to define convolutional VAEs, their losses, their training step, and how to train them for the synthetic and the original small datasets respectivly. Both notebooks are similar with differences being limited to the names of the folders being loaded and files being saved.
 
 
-The "var_ae_gan_synthetic_data" notebook shows all the steps needed to train a VAE-GAN on the synthetic dataset. "var_ae_gan_real_fractured_data" and "var_ae_gan_real_fractured_data_transfer_learning" show the steps to tain a VAE-GAN from scratch and using tansfer learning on the fractured AUBMC data respectivly. "var_ae_gan_real_healthy_data" and "var_ae_gan_real_healthy_data_transfer_learning" show the steps to tain a VAE-GAN from scratch and using tansfer learning on the healthy AUBMC data respectivly. All notebooks are similar with with differences being limited to the names of the folders being loaded and files being saved.
+The "var_ae_gan_synthetic_data" notebook shows all the steps needed to train a VAE-GAN on the synthetic dataset. "var_ae_gan_real_fractured_data" and "var_ae_gan_real_fractured_data_transfer_learning" show the steps to tain a VAE-GAN from scratch and using tansfer learning on the fractured original data respectivly. "var_ae_gan_real_healthy_data" and "var_ae_gan_real_healthy_data_transfer_learning" show the steps to tain a VAE-GAN from scratch and using tansfer learning on the healthy original data respectivly. All notebooks are similar with with differences being limited to the names of the folders being loaded and files being saved.
 
 The "CNN_with_Augmentation" notebook shows how to train and evaluate a CNN on VAE-GAN generated data for both healthy and fractured vertebra.
 
